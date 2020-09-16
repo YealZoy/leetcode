@@ -1,0 +1,12 @@
+{
+  "name": "cn",
+  "version": "1.0.0",
+  "description": "",
+  "main": "[100185]旋转矩阵.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "run": "node ./[118]杨辉三角.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
