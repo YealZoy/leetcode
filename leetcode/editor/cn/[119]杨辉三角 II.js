@@ -23,6 +23,34 @@
  * @return {number[]}
  */
 var getRow = function(rowIndex) {
+    let result = [];
+    for(let i = 0; i <= rowIndex; i++){
+        let inArr = [];
+        if(i == 0){
+            inArr.push(1);
+            result[i] = inArr;
 
+            if(rowIndex == 0){
+                return inArr;
+            }
+            continue;
+        }
+
+        let t = 0;
+        while (t <= i){
+            if(t == 0 || t == i){
+                inArr[t] = 1;
+                t++;
+                continue;
+            }
+
+            inArr[t] = result[ i - 1][ t - 1] + result[ i - 1][t];
+            t++;
+        }
+        result[i] = inArr;
+        if(i == rowIndex){
+            return inArr;
+        }
+    }
 };
 //leetcode submit region end(Prohibit modification and deletion)

@@ -5,7 +5,7 @@
   "main": "[100185]旋转矩阵.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "run": "node ./[118]杨辉三角.js"
+    "run": "node ./[860]设计循环队列.js"
   },
   "author": "",
   "license": "ISC"
